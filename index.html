@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div>
+      <p class="eyebrow">YOUR PERSONAL WORKSPACE</p>
+      <h1>Study Planner</h1>
+      <p class="subtitle">Small steps. Consistent progress.</p>
+    </div>
+    <div class="date-label" id="today"></div>
+  </header>
+
+  <main class="container">
+    <section class="stats">
+      <article class="stat-card">
+        <span>Total tasks</span>
+        <strong id="total">0</strong>
+      </article>
+      <article class="stat-card">
+        <span>Completed</span>
+        <strong id="completed">0</strong>
+      </article>
+      <article class="stat-card">
+        <span>Remaining</span>
+        <strong id="remaining">0</strong>
+      </article>
+    </section>
+
+    <section class="panel">
+      <h2>Add a study task</h2>
+
+      <form id="task-form">
+        <label for="task">Task name</label>
+        <input id="task" type="text"
+          placeholder="e.g. Revise SQL joins" required>
+
+        <div class="form-row">
+          <div>
+            <label for="subject">Subject</label>
+            <input id="subject" type="text"
+              placeholder="e.g. DBMS" required>
+          </div>
+          <div>
+            <label for="deadline">Deadline</label>
+            <input id="deadline" type="date" required>
+          </div>
+        </div>
+
+        <label for="priority">Priority</label>
+        <select id="priority">
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+          <option value="Low">Low</option>
+        </select>
+
+        <button type="submit">+ Add task</button>
+      </form>
+    </section>
+
+    <section class="tasks-section">
+      <div class="tasks-heading">
+        <div>
+          <h2>Your tasks</h2>
+          <p class="subtitle">Keep your next step clear.</p>
+        </div>
+        <select id="filter" aria-label="Filter tasks">
+          <option value="all">All tasks</option>
+          <option value="pending">Pending</option>
+          <option value="completed">Completed</option>
+        </select>
+      </div>
+
+      <div id="task-list" class="task-list"></div>
+      <p id="empty-message">No tasks yet. Add your first one!</p>
+    </section>
+  </main>
+
+  <footer>
+    Built while learning HTML, CSS and JavaScript.
+  </footer>
+</body>
+</html>
