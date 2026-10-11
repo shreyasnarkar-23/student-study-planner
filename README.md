@@ -43,3 +43,11 @@ and storing data in the browser.
 ---
 
 Created as a personal learning project.
+
+## Screenshot
+
+![Student Study Planner dashboard](screenshots/study-planner.png)
+
+## Live Demo
+
+[Open Student Study Planner](https://shreyasnarkar-23.github.io/student-study-planner/)
