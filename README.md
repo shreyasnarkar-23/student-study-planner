@@ -44,10 +44,25 @@ and storing data in the browser.
 
 Created as a personal learning project.
 
+
 ## Screenshot
 
 ![Student Study Planner dashboard](screenshots/study-planner.png)
 
 ## Live Demo
 
-[Open Student Study Planner](https://shreyasnarkar-23.github.io/student-study-planner/)
+Try the [Student Study Planner](https://shreyasnarkar-23.github.io/student-study-planner/).
+
+## Project Structure
+
+- `index.html` — page structure and task form
+- `style.css` — styling and responsive layout
+- `script.js` — task management and browser storage
+- `screenshots/` — project screenshots
+
+## Future Improvements
+
+- Edit existing tasks
+- Search and filter tasks by subject
+- Improve deadline and overdue-task handling
+- Add a backend and database
